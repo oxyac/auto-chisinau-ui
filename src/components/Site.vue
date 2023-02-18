@@ -73,7 +73,7 @@ export default {
   watch: {
     '$route.params.site_id': {
       handler: function (search) {
-        this.siteId = search
+        this.siteId = search ? search : 1;
         this.reload()
       },
       deep: true,
