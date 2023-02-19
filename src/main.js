@@ -11,7 +11,7 @@ const instance = redaxios.create({
         Accept: 'application/json',
         'Content-Type': 'application/json',
     },
-    baseURL: 'http://localhost:7880'
+    baseURL: 'http://auto.loc'
 
 })
 
