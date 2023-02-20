@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from "./index.js";
 import './index.css'
@@ -11,8 +11,7 @@ const instance = redaxios.create({
         Accept: 'application/json',
         'Content-Type': 'application/json',
     },
-    baseURL: 'https://auto.frozendrizzle.com/api/cars'
-
+    baseURL: import.meta.env.VITE_API_BASE_URL + '/cars'
 })
 
 const pinia = createPinia()
